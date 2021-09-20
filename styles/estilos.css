@@ -12,6 +12,14 @@
             padding: 0px;
             margin: 0px;
             padding: 10px;
+            background-color: rgb(214, 215, 223);
+            border-bottom: 2px solid gray;
+            box-shadow: 1px 1px gray;
+        }
+        
+        .navbar>li {
+            display: flex;
+            align-items: center;
         }
         
         .logo {
@@ -60,15 +68,22 @@
             border: 1px solid gray;
             padding: 4px;
             border-radius: 8px;
+            width: 300px;
+            display: flex;
+            justify-content: space-between;
         }
         /*crear una subclase para el boton buscar y aplicarle unas propiedades*/
         
         .buscar:focus-within {
-            border: 1px solid blue;
+            border: 2px solid blue;
         }
         /*crear otra subclase para el boton buscar y aplicarle unas propiedades*/
         
         .buscar>input {
             outline: none;
-            border: 0px;
+            border: 2px;
+        }
+        
+        .iconeBusqueda:hover {
+            color: red;
         }
